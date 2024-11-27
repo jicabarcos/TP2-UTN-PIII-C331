@@ -1,0 +1,207 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "TP2-ProgIII",
+    "collectionId": "386880ba-bf1b-46db-891e-179be8717e08",
+    "dateExported": "2024-11-27T20:06:06.948Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "a7c1a6bd-6ab1-4f7c-8cfc-2a3721ecc6db",
+            "name": "Peliculas",
+            "containerId": "",
+            "created": "2024-11-27T17:49:01.664Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "68cc7143-0dbf-4e26-8d9e-fa5c1944627c",
+            "name": "Directores",
+            "containerId": "",
+            "created": "2024-11-27T17:49:09.161Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "662af762-4116-44f0-b1bc-fb460df850fa",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "a7c1a6bd-6ab1-4f7c-8cfc-2a3721ecc6db",
+            "name": "PeliculasCreate",
+            "url": "http://localhost:3030/peliculas/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-11-27T16:54:02.066Z",
+            "modified": "2024-11-27T19:57:25.094Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"Name\": \"Interstellar\",\r\n  \"Genre\": \"Sci-Fi\",\r\n  \"Score\": 4.7,\r\n  \"DirectorId\": 1,\r\n  \"Status\": true\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "658db520-8b2c-4b8c-a776-b720436d09c3",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "68cc7143-0dbf-4e26-8d9e-fa5c1944627c",
+            "name": "DirectoresCreate",
+            "url": "http://localhost:3030/directores/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-11-27T17:07:05.727Z",
+            "modified": "2024-11-27T18:16:50.822Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"FirstName\": \"Denis\",\r\n  \"LastName\": \"Villeneuve\"\r\n}\r\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "905b7c5d-5c98-465e-b1f4-0daf08fd948c",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "a7c1a6bd-6ab1-4f7c-8cfc-2a3721ecc6db",
+            "name": "PeliculasUpdate",
+            "url": "http://localhost:3030/peliculas/6",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-11-27T17:24:39.844Z",
+            "modified": "2024-11-27T18:25:17.375Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Status\": false\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a41572a9-596b-49a9-bc31-d8047deefa77",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "68cc7143-0dbf-4e26-8d9e-fa5c1944627c",
+            "name": "DirectoresGetAll",
+            "url": "http://localhost:3030/directores/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-11-27T17:38:16.220Z",
+            "modified": "2024-11-27T17:39:16.554Z",
+            "headers": []
+        },
+        {
+            "_id": "10b46f30-a684-4eda-b640-87a19a53b248",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "a7c1a6bd-6ab1-4f7c-8cfc-2a3721ecc6db",
+            "name": "PeliculasGetAll",
+            "url": "http://localhost:3030/peliculas/",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-27T16:52:30.957Z",
+            "modified": "2024-11-27T18:25:48.240Z",
+            "headers": []
+        },
+        {
+            "_id": "736fc98b-5921-428f-b416-258cf49997b9",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "68cc7143-0dbf-4e26-8d9e-fa5c1944627c",
+            "name": "DirectoresGetById",
+            "url": "http://localhost:3030/directores/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-27T17:40:14.217Z",
+            "modified": "2024-11-27T17:40:23.026Z",
+            "headers": []
+        },
+        {
+            "_id": "dcdae938-5ceb-47f5-a0a3-f6da50aa6c8d",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "a7c1a6bd-6ab1-4f7c-8cfc-2a3721ecc6db",
+            "name": "PeliculasGetById",
+            "url": "http://localhost:3030/peliculas/1",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-11-27T17:24:10.927Z",
+            "modified": "2024-11-27T17:24:14.591Z",
+            "headers": []
+        },
+        {
+            "_id": "dd0c4bc6-b153-45b0-9dd6-5b5c11194e92",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "68cc7143-0dbf-4e26-8d9e-fa5c1944627c",
+            "name": "DirectoresDelete",
+            "url": "http://localhost:3030/directores/1",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-11-27T17:46:45.467Z",
+            "modified": "2024-11-27T17:46:52.074Z",
+            "headers": []
+        },
+        {
+            "_id": "5fafb27e-e3b4-489a-b3de-2dc421fce2ff",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "a7c1a6bd-6ab1-4f7c-8cfc-2a3721ecc6db",
+            "name": "PeliculasGetAll (with filters)",
+            "url": "http://localhost:3030/peliculas/?page=1&limit=5&genre=Action",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-11-27T18:25:35.289Z",
+            "modified": "2024-11-27T19:58:39.801Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "page",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "limit",
+                    "value": "5",
+                    "isPath": false
+                },
+                {
+                    "name": "sort",
+                    "value": "ASC",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "genre",
+                    "value": "Action",
+                    "isPath": false
+                },
+                {
+                    "name": "status",
+                    "value": "true",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "_id": "b884dcb5-401c-40ce-8cf8-5cf0849a2777",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "a7c1a6bd-6ab1-4f7c-8cfc-2a3721ecc6db",
+            "name": "PeliculasDelete",
+            "url": "http://localhost:3030/peliculas/4",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-11-27T17:25:55.590Z",
+            "modified": "2024-11-27T17:47:18.894Z",
+            "headers": []
+        },
+        {
+            "_id": "86c4279e-ad3e-4d37-96ec-60ee0b7ded44",
+            "colId": "386880ba-bf1b-46db-891e-179be8717e08",
+            "containerId": "68cc7143-0dbf-4e26-8d9e-fa5c1944627c",
+            "name": "DirectoresUpdate",
+            "url": "http://localhost:3030/directores/1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-11-27T17:38:30.896Z",
+            "modified": "2024-11-27T17:38:55.093Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"Name\": \"Daniel\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "z1E5pQFaQd6m_sZZYkGxKEp3Ksk04UzB6Dhll60kJn5d4D1USN4AE7WtEzO5sipDMVsGGu8KEdWE9cW35xKRgQ"
+}
